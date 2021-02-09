@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="author" content="Daniel Melgarejo">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+</head>
+<body>
+   <div class="calculator">   
+      <p id="display">0</p>
+      <div>
+         <button class="button1row" onclick="funcClear()">C</button>
+         <button class="button1row" onclick="funcDel()">DEL</button>
+      </div>
+      <div>
+         <button class="numeric" onclick="displayDigit('7')">7</button>
+         <button class="numeric" onclick="displayDigit('8')">8</button>
+         <button class="numeric" onclick="displayDigit('9')">9</button>
+         <button class="operation" onclick="displayOperator('/')">/</button>
+      </div>
+      <div>
+         <button class="numeric" onclick="displayDigit('4')">4</button>
+         <button class="numeric" onclick="displayDigit('5')">5</button>
+         <button class="numeric" onclick="displayDigit('6')">6</button>
+         <button class="operation" onclick="displayOperator('*')">x</button>
+      </div>
+      <div>
+         <button class="numeric" onclick="displayDigit('1')">1</button>
+         <button class="numeric" onclick="displayDigit('2')">2</button>
+         <button class="numeric" onclick="displayDigit('3')">3</button>
+         <button class="operation" onclick="displayOperator('-')">-</button>
+      </div>
+      <div>
+        <button class="numeric" onclick="displayDecimal()">.</button>
+        <button class="numeric" onclick="displayDigit('0')">0</button>
+        <button class="numeric" onclick="funcSolve()">=</button>
+        <button class="operation" onclick="displayOperator('+')">+</button>
+      </div>
+   </div>
+</body>
+</html>
